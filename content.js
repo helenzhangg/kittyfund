@@ -1,3 +1,9 @@
+// var mongo = require('mongodb');
+// var monk = require('monk');
+// var db = monk('localhost:27017/kitty');
+// var express = require('express');
+// var router = express.Router();
+
 InboxSDK.load('1', 'sdk_kitty_95d79f53b5').then(function(sdk){
 
 	// the SDK has been loaded, now do something with it!
@@ -39,10 +45,6 @@ InboxSDK.load('1', 'sdk_kitty_95d79f53b5').then(function(sdk){
                 header.textContent = "Subject: " + m + r[0].emailAddress;
 
                 var buttons = document.querySelectorAll(".T-I.J-J5-Ji.ar7.L3.inboxsdk__button.T-I-ax7");
-								// for each (var button in buttons){
-								// 	button.style.background = "#ff6f00";
-								// 	button.style.color="white";
-								// }
 
 								for (i=0; i<buttons.length;i++){
 									buttons[i].style.background="#039be5 ";
